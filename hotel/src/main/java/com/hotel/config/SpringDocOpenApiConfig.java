@@ -6,15 +6,19 @@ import io.swagger.v3.oas.models.info.License;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
+/**
+ * Classe de configuração para a documentação da API
+ */
 @Configuration
 public class SpringDocOpenApiConfig {
 
+    //Esse bean é responsável por criar a documentação da API
     @Bean
     public OpenAPI customOpenAPI() {
         return new OpenAPI()
-                .info(new Info().title("Hotel API")
-                .description("Hotel API for managing hotel data")
-                .version("v1.0.0")
-                .license(new License().name("Apache 2.0").url("http://springdoc.org")));
+                .info(new Info().title("Hotel API") //Título da API
+                .description("Hotel API for managing hotel data") //Descrição da API
+                .version("v1.0.0")//Versão da API
+                .license(new License().name("Apache 2.0").url("http://springdoc.org")));//
     }
 }

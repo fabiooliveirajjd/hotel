@@ -8,6 +8,9 @@ import org.apache.tomcat.util.codec.binary.Base64;
 import java.math.BigDecimal;
 import java.util.List;
 
+/**
+ * Classe que representa a resposta do quarto
+ */
 @Data
 @NoArgsConstructor
 public class RoomResponse {
@@ -33,5 +36,4 @@ public class RoomResponse {
         this.photo = photoBytes != null ? Base64.encodeBase64String(photoBytes) : null;
         this.bookings = bookings;
     }
-
 }

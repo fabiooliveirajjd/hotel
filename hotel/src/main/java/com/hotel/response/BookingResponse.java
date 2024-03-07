@@ -6,6 +6,9 @@ import lombok.NoArgsConstructor;
 
 import java.time.LocalDate;
 
+/**
+ * Classe que representa a resposta da reserva
+ */
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
